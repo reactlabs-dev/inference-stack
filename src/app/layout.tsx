@@ -1,29 +1,31 @@
-/* eslint-disable @next/next/next-script-for-ga */
-export const metadata = {
-  title: 'InferenceStack',
-  description: 'Full-stack AI systems and consulting by Matt Vegas',
-}
+// InferenceStack: Next.js + TailwindCSS + TypeScript SPA Bootstrapping
+// Extended with dark/light theme, sticky nav, responsive layout, and motion-ready
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'InferenceStack | Applied Intelligence, Engineered',
+  description: 'The full-stack AI consultancy and engineering portfolio of Matt Vegas.',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <head>
-        {/* Google Analytics Tag */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDSFDC1J8G"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PDSFDC1J8G', { page_path: window.location.pathname });
-            `,
-          }}
-        />
-      </head>
-      <body className="bg-black text-white">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 ${inter.className}`}>
+        <Header />
+        <main className="relative z-10">{children}</main>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
