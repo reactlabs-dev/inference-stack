@@ -1,0 +1,31 @@
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+  }
+  
+  .marquee-item {
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--foreground);
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

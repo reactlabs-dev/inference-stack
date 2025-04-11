@@ -1,3 +1,5 @@
+import { SocialIcons } from '../SocialIcons'
+
 export const ContactSection = () => {
     return (
       <section
@@ -13,15 +15,13 @@ export const ContactSection = () => {
         </p>
   
         <a
-          href="mailto:you@inference-stack.com"
+          href="mailto:matt.vegas@inference-stack.com"
           className="inline-block px-6 py-3 rounded-md bg-primary text-white font-medium hover:opacity-90 transition"
         >
-          you@inference-stack.com
+          matt.vegas@inference-stack.com
         </a>
   
-        <p className="mt-6 text-sm text-neutral-400 dark:text-neutral-600">
-          Or reach out via <a href="https://www.linkedin.com/in/mattvegas" target="_blank" rel="noreferrer" className="underline hover:text-primary">LinkedIn</a>.
-        </p>
+        <SocialIcons />
       </section>
     )
   }
