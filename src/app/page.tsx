@@ -9,14 +9,14 @@ import { SectionWithParticles } from '@/components/SectionWithParticles';
 export default function Home() {
   return (
     <>
-        <HeroSection />
-        <SectionWithParticles>
-          <AboutSection />
-          <ServicesSection />
-          <ProjectsSection />
-          <ResourcesSection />
-          <ContactSection />
-        </SectionWithParticles>
+      <HeroSection />
+      <SectionWithParticles>
+        <AboutSection />
+        <ServicesSection />
+        <ProjectsSection />
+        <ResourcesSection />
+        <ContactSection />
+      </SectionWithParticles>
     </>
   );
 }
