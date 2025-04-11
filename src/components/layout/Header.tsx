@@ -4,8 +4,6 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import {
-    MoonIcon,
-    SunIcon,
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -20,7 +18,7 @@ const navLinks = [
 
 export const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false)
-    const [darkMode, setDarkMode] = useState(false)
+    const [, setDarkMode] = useState(false)
 
     useEffect(() => {
         const isDark = localStorage.getItem('theme') === 'dark'
@@ -28,12 +26,12 @@ export const Header = () => {
         document.documentElement.classList.toggle('dark', isDark)
     }, [])
 
-    const toggleTheme = () => {
-        const newTheme = !darkMode
-        setDarkMode(newTheme)
-        document.documentElement.classList.toggle('dark', newTheme)
-        localStorage.setItem('theme', newTheme ? 'dark' : 'light')
-    }
+    // const toggleTheme = () => {
+    //     const newTheme = !darkMode
+    //     setDarkMode(newTheme)
+    //     document.documentElement.classList.toggle('dark', newTheme)
+    //     localStorage.setItem('theme', newTheme ? 'dark' : 'light')
+    // }
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-neutral-800 bg-white/90 dark:bg-black/90 backdrop-blur">
@@ -47,14 +45,14 @@ export const Header = () => {
                 </Link>
 
                 <div className="flex items-center gap-4 md:hidden">
-                    <button onClick={toggleTheme} aria-label="Toggle theme" className="cursor-pointer text-white">
+                    {/* <button onClick={toggleTheme} aria-label="Toggle theme" className="cursor-pointer text-white">
                         {darkMode ? (
                             <SunIcon className="h-5 w-5 text-white" />
                         ) : (
                             <MoonIcon className="h-5 w-5 text-white" />
                         )}
 
-                    </button>
+                    </button> */}
                     <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu" className="cursor-pointer">
                         {mobileOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
                     </button>
@@ -66,9 +64,9 @@ export const Header = () => {
                             {label}
                         </a>
                     ))}
-                    <button onClick={toggleTheme} aria-label="Toggle theme" className="cursor-pointer">
+                    {/* <button onClick={toggleTheme} aria-label="Toggle theme" className="cursor-pointer">
                         {darkMode ? <SunIcon className="h-5 w-5 text-white" /> : <MoonIcon className="h-5 w-5 text-white" />}
-                    </button>
+                    </button> */}
                 </nav>
             </div>
 
