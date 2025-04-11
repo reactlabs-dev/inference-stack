@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <>
-      <footer className="w-full border-t border-neutral-800 py-6 px-4 text-sm text-neutral-800 bg-white dark:bg-black relative">
+      <footer className="w-full border-t border-neutral-800 py-6 px-4 text-sm text-neutral-700 bg-white dark:bg-black relative">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <span>
             © {new Date().getFullYear()} InferenceStack. All rights reserved.
@@ -21,6 +21,7 @@ export const Footer = () => {
             >
               Credits
             </button>
+            &nbsp;<span className="text-gray-400">www.inference-stack.com</span>
           </div>
         </div>
       </footer>

@@ -21,7 +21,7 @@ const CreditsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
 
         <div className="text-sm text-gray-600 dark:text-gray-400 space-y-3 leading-relaxed">
           <p>
-            This portfolio was fully designed and developed by <strong>Matt Vegas</strong>.
+            This portfolio was designed and developed by <strong>Matt Vegas</strong>.
             Every element — from interface architecture to deployment strategy — was crafted with intent.
           </p>
 
