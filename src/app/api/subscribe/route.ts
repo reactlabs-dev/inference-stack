@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
       Subject: 'Your Download: The Ultimate AI Engineering Cheatsheet 2025',
       HtmlBody: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
-          <img src="https://www.inference-stack.com/inference_stack_logowhite.png" alt="InferenceStack Logo" style="width: 160px; margin-bottom: 24px;" />
+          <img src="https://www.inference-stack.com/inference_stack_logowhite.png" alt="InferenceStack Logo" style="width: 260px; margin-bottom: 24px;" />
           <h2 style="color: #000;">Hey ${name},</h2>
           <p style="font-size: 16px; color: #333;">Thanks for downloading <strong>The Ultimate AI Engineering Cheatsheet 2025</strong>.</p>
           <p style="font-size: 16px; color: #333;">You can download it directly using this secure link:</p>
