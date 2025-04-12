@@ -38,7 +38,7 @@ export const SocialIcons = () => {
 
             {/* GitHub */}
             <a
-                href="https://github.com/reactlabs-dev"
+                href="https://github.com/reactlabs-dev?tab=overview&from=2025-04-01&to=2025-04-12"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
