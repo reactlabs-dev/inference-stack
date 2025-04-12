@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { AIAssistant } from '@/components/AIAssistant';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -70,6 +71,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="relative z-10">{children}</main>
+        <AIAssistant />
         <Footer />
       </body>
     </html>
