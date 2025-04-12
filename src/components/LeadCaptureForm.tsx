@@ -33,10 +33,16 @@ export const LeadCaptureForm = () => {
   }
 
   return (
-    <div id="cheatsheet" className="max-w-xl mx-auto px-4 py-12">
-      <h2 className="text-2xl font-bold text-center mb-6 text-white">
+    <div id="cheatsheet" className="max-w-xl mx-auto px-2 py-12">
+      <h2 className="text-xl font-bold text-center mb-2 text-white">
         Get The Ultimate AI Engineering Cheatsheet 2025
       </h2>
+      <p className="text-center text-neutral-400 mb-2">
+        A 57-page engineering resource created for builders, not theorists. 🔥
+      </p>
+      <p className="text-center text-neutral-500 mb-6 text-sm">
+        This AI Engineering Cheatsheet was created to provide practical guidance for building production-grade AI systems using Large Language Models. It focuses on real-world engineering patterns rather than theoretical machine learning concepts.
+      </p>
 
       {status === 'success' ? (
         <div className="text-green-400 text-center font-medium">
