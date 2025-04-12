@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
           <p style="font-size: 16px; color: #333;">Thanks for downloading <strong>The Ultimate AI Engineering Cheatsheet 2025</strong>.</p>
           <p style="font-size: 16px; color: #333;">You can download it directly using this secure link:</p>
           <p style="margin: 20px 0;"><a href="https://www.inference-stack.com/download/cheatsheet" style="background-color: #000; color: #fff; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">Download Cheatsheet</a></p>
-          <p style="font-size: 14px; color: #666;">Cheers,<br />Matt @ InferenceStack</p>
+          <p style="font-size: 14px; color: #666;">Cheers,<br />Matt@InferenceStack</p>
         </div>
       `,
       TextBody: `Hey ${name},\n\nThanks for downloading The Ultimate AI Engineering Cheatsheet 2025.\n\nYou can download it directly using this secure link:\nhttps://www.inference-stack.com/download/cheatsheet\n\nCheers,\nMatt @ InferenceStack`
