@@ -33,7 +33,7 @@ export const LeadCaptureForm = () => {
   }
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-12">
+    <div id="cheatsheet" className="max-w-xl mx-auto px-4 py-12">
       <h2 className="text-2xl font-bold text-center mb-6 text-white">
         Get The Ultimate AI Engineering Cheatsheet 2025
       </h2>
