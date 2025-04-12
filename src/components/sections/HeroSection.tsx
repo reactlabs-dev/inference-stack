@@ -4,6 +4,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Typewriter } from 'react-simple-typewriter'
 
 export const HeroSection = () => {
   return (
@@ -28,10 +29,23 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="relative z-10 max-w-3xl text-center px-6 sm:px-10 py-12 backdrop-blur-md bg-black/30 dark:bg-black/40 rounded-xl"
+          className="relative z-10 max-w-3xl text-center px-6 sm:px-10 py-12 backdrop-blur-md bg-black/30 dark:bg-black/40 rounded-xl min-h-[180px]"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Applied Intelligence, Engineered.
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 min-h-[96px]">
+            <Typewriter
+              words={[
+                'From Infrastructure to Interface.',
+                'LLM systems, production-ready.',
+                'Deploy faster. Scale smarter.',
+                'Architecting AI outcomes.',
+                'Applied Intelligence, Engineered.'
+              ]}
+              loop={1}
+              typeSpeed={40}
+              deleteSpeed={25}
+              delaySpeed={2000}
+              cursor={false}
+            />
           </h1>
           <p className="text-lg text-neutral-300 mb-8">
             InferenceStack is the independent portfolio and consultancy of Matt Vegas.
@@ -79,9 +93,30 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="px-6 py-10 text-center bg-black"
         >
-          <h1 className="text-3xl font-bold text-white mb-4">
-            Applied Intelligence, Engineered.
+          <h1 className="text-2xl font-bold text-white mb-4 min-h-[88px]">
+            <span className="typewriter-cursor">
+              <Typewriter
+                words={[
+                  'From Infrastructure to Interface.',
+                  'LLM systems, production-ready.',
+                  'Deploy faster. Scale smarter.',
+                  'Architecting AI outcomes.',
+                  'Applied Intelligence, Engineered.'
+                ]}
+                loop={1}
+                typeSpeed={40}
+                deleteSpeed={25}
+                delaySpeed={2000}
+                cursor
+                cursorStyle="|"
+                onLoopDone={() => {
+                  const cursor = document.querySelector('.typewriter-cursor');
+                  if (cursor) cursor.classList.add('opacity-0');
+                }}
+              />
+            </span>
           </h1>
+
           <p className="text-base text-neutral-300 mb-6">
             InferenceStack is the independent portfolio and consultancy of Matt Vegas.
             I design and deploy full-stack AI systems—from infrastructure to interface.
@@ -107,7 +142,7 @@ export const HeroSection = () => {
           </p>
 
           <p className="mt-4 text-sm text-primary-300 text-center">
-            ↓ Scroll to download the 57-page AI Engineering Cheatsheet.
+            ↓ Scroll to download the 57-page AI Engineering Cheatsheet. 🔥
           </p>
         </motion.div>
       </section>
