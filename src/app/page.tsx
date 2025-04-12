@@ -1,3 +1,4 @@
+import { LeadCaptureForm } from '@/components/LeadCaptureForm';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { HeroSection } from '@/components/sections/HeroSection';
@@ -15,6 +16,7 @@ export default function Home() {
         <ServicesSection />
         <ProjectsSection />
         <ResourcesSection />
+        <LeadCaptureForm />
         <ContactSection />
       </SectionWithParticles>
     </>

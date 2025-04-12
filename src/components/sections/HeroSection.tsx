@@ -56,6 +56,10 @@ export const HeroSection = () => {
           <p className="mt-6 text-sm text-neutral-400 italic">
             “I don't just build AI systems — I architect outcomes.”
           </p>
+
+          <Link href="#cheatsheet" className="mt-4 text-sm text-primary-300 smooth-scroll">
+            ↓ Scroll to download the 57-page AI Engineering Cheatsheet. 🔥
+          </Link>
         </motion.div>
       </section>
 
@@ -100,6 +104,10 @@ export const HeroSection = () => {
 
           <p className="mt-6 text-sm text-neutral-400 italic">
             “I don't just build AI systems — I architect outcomes.”
+          </p>
+
+          <p className="mt-4 text-sm text-primary-300 text-center">
+            ↓ Scroll to download the 57-page AI Engineering Cheatsheet.
           </p>
         </motion.div>
       </section>
