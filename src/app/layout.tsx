@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'InferenceStack',
     images: [
       {
-        url: '/mattvegas_hero.png',
+        url: 'https://www.inference-stack.com/inferencestack_og.png',
         width: 1200,
         height: 630,
         alt: 'Matt Vegas speaking — InferenceStack Hero',
