@@ -4,7 +4,6 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Typewriter } from 'react-simple-typewriter'
 
 export const HeroSection = () => {
   return (
@@ -18,7 +17,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/ai_data.jpg"
-            alt="Matt Vegas speaking"
+            alt="AI Data Background"
             className="w-full h-full object-cover brightness-[0.5] sm:brightness-[0.4]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
@@ -33,20 +32,6 @@ export const HeroSection = () => {
         >
           <h1 className="text-2xl md:text-4xl font-bold text-white mb-6 min-h-[96px]">
             Transforming Complex Data into Strategic Insights with Precision AI Solutions
-            {/* <Typewriter
-              words={[
-                'From Infrastructure to Interface.',
-                'LLM systems, production-ready.',
-                'Deploy faster. Scale smarter.',
-                'Architecting AI outcomes.',
-                'Applied Intelligence, Engineered.'
-              ]}
-              loop={1}
-              typeSpeed={40}
-              deleteSpeed={25}
-              delaySpeed={2000}
-              cursor={false}
-            /> */}
           </h1>
           <p className="text-lg text-neutral-300 mb-8">
             At Inference Stack, I engineer bespoke AI systems that drive decision-making and operational excellence.
@@ -78,48 +63,32 @@ export const HeroSection = () => {
       </section>
 
       {/* 📱 Mobile Layout */}
-      <section className="sm:hidden">
-        <div className="w-full">
+      <section
+        id="hero-mobile"
+        className="sm:hidden relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden"
+      >
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
           <img
-            src="/mattvegas_hero.png"
-            alt="Matt Vegas speaking"
-            className="w-full h-[60vh] object-cover brightness-[0.5]"
+            src="/ai_data.jpg"
+            alt="AI Data Background"
+            className="w-full h-full object-cover brightness-[0.5]"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
         </div>
 
+        {/* Content overlay */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="px-6 py-10 text-center bg-black"
+          className="relative z-10 max-w-[90%] text-center px-4 py-8 backdrop-blur-md bg-black/30 dark:bg-black/40 rounded-xl"
         >
-          <h1 className="text-2xl font-bold text-white mb-4 min-h-[88px]">
-            <span className="typewriter-cursor">
-              <Typewriter
-                words={[
-                  'From Infrastructure to Interface.',
-                  'LLM systems, production-ready.',
-                  'Deploy faster. Scale smarter.',
-                  'Architecting AI outcomes.',
-                  'Applied Intelligence, Engineered.'
-                ]}
-                loop={1}
-                typeSpeed={40}
-                deleteSpeed={25}
-                delaySpeed={2000}
-                cursor
-                cursorStyle="|"
-                onLoopDone={() => {
-                  const cursor = document.querySelector('.typewriter-cursor');
-                  if (cursor) cursor.classList.add('opacity-0');
-                }}
-              />
-            </span>
+          <h1 className="text-2xl font-bold text-white mb-4">
+            Transforming Complex Data into Strategic Insights with Precision AI Solutions
           </h1>
-
           <p className="text-base text-neutral-300 mb-6">
-            InferenceStack is the independent portfolio and consultancy of Matt Vegas.
-            I design and deploy full-stack AI systems—from infrastructure to interface.
+            At Inference Stack, I engineer bespoke AI systems that drive decision-making and operational excellence.
           </p>
 
           <div className="flex flex-col items-center gap-4">
@@ -133,7 +102,7 @@ export const HeroSection = () => {
               href="#contact"
               className="w-full max-w-xs px-6 py-3 rounded-md border border-white text-white text-sm hover:border-primary hover:text-primary transition"
             >
-              Contact Me
+              Schedule a Strategic Consultation
             </Link>
           </div>
 
@@ -141,9 +110,9 @@ export const HeroSection = () => {
             “I don't just build AI systems — I architect outcomes.”
           </p>
 
-          <p className="mt-4 text-sm text-primary-300 text-center">
+          <Link href="#cheatsheet" className="mt-4 text-sm text-primary-300 smooth-scroll">
             ↓ Scroll to download the 57-page AI Engineering Cheatsheet. 🔥
-          </p>
+          </Link>
         </motion.div>
       </section>
     </>

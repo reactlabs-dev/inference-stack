@@ -3,7 +3,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="w-full px-6 py-16 sm:py-20 sm:px-10 max-w-5xl mx-auto text-center scroll-mt-16 mb-16"
+      className="max-w-full px-6 py-16 sm:py-20 sm:px-10 mx-auto text-center scroll-mt-16 mb-16"
       aria-labelledby="about-heading"
     >
       <div className="flex justify-center mb-6">
