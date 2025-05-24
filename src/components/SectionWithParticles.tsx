@@ -56,7 +56,7 @@ export const SectionWithParticles = ({ children, className = '' }: Props) => {
       },
     },
   }}
-  className="absolute inset-0 z-0 pointer-events-none mix-blend-screen"
+  className="absolute inset-0 z-0 pointer-events-none mix-blend-screen bg-black/50"
 />
 
 

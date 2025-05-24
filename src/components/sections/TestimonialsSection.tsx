@@ -164,7 +164,7 @@ export const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="w-full px-6 py-16 sm:py-20 sm:px-10 max-w-6xl mx-auto text-center scroll-mt-16"
+      className="max-w-full px-6 py-16 sm:py-20 sm:px-10 mx-auto text-center scroll-mt-16 bg-black"
       aria-labelledby="testimonials-heading"
     >
       <h2
@@ -178,7 +178,7 @@ export const TestimonialsSection = () => {
       </p>
 
       <div className="relative">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" role="region" aria-live="polite" aria-label="Testimonials carousel">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" role="region" aria-live="polite" aria-label="Testimonials carousel">
           {visibleTestimonials.map((testimonial) => (
             <div
               key={`${testimonial.author}-${testimonial.company}`}
