@@ -17,7 +17,7 @@ export const HeroSection = () => {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/mattvegas_hero.png"
+            src="/ai_data.jpg"
             alt="Matt Vegas speaking"
             className="w-full h-full object-cover brightness-[0.5] sm:brightness-[0.4]"
           />
@@ -31,8 +31,9 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="relative z-10 max-w-3xl text-center px-6 sm:px-10 py-12 backdrop-blur-md bg-black/30 dark:bg-black/40 rounded-xl min-h-[180px]"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 min-h-[96px]">
-            <Typewriter
+          <h1 className="text-2xl md:text-4xl font-bold text-white mb-6 min-h-[96px]">
+            Transforming Complex Data into Strategic Insights with Precision AI Solutions
+            {/* <Typewriter
               words={[
                 'From Infrastructure to Interface.',
                 'LLM systems, production-ready.',
@@ -45,11 +46,10 @@ export const HeroSection = () => {
               deleteSpeed={25}
               delaySpeed={2000}
               cursor={false}
-            />
+            /> */}
           </h1>
           <p className="text-lg text-neutral-300 mb-8">
-            InferenceStack is the independent portfolio and consultancy of Matt Vegas.
-            I design and deploy full-stack AI systems—from infrastructure to interface.
+            At Inference Stack, I engineer bespoke AI systems that drive decision-making and operational excellence.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -63,7 +63,7 @@ export const HeroSection = () => {
               href="#contact"
               className="px-6 py-3 rounded-md border border-white text-white text-sm hover:border-primary hover:text-primary transition"
             >
-              Contact Me
+              Schedule a Strategic Consultation
             </Link>
           </div>
 

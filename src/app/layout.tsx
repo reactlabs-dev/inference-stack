@@ -10,11 +10,11 @@ import { RouteTracker } from '@/components/RouteTracker';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'InferenceStack | Applied Intelligence, Engineered',
+  title: 'InferenceStack | Transforming Complex Data into Strategic Insights with Precision AI Solutions',
   description: 'The full-stack AI consultancy and engineering portfolio of Matt Vegas.',
   metadataBase: new URL('https://www.inference-stack.com'),
   openGraph: {
-    title: 'InferenceStack | Applied Intelligence, Engineered',
+    title: 'InferenceStack | Transforming Complex Data into Strategic Insights with Precision AI Solutions',
     description: 'AI systems, infrastructure, and product consulting by Matt Vegas.',
     url: 'https://www.inference-stack.com',
     siteName: 'InferenceStack',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'InferenceStack | Applied Intelligence, Engineered',
+    title: 'InferenceStack | Transforming Complex Data into Strategic Insights with Precision AI Solutions',
     description: 'The AI consultancy and product studio of Matt Vegas.',
     images: ['/mattvegas_hero.png'],
     creator: '@mattvegas',

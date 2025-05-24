@@ -1,12 +1,11 @@
 import { LeadCaptureForm } from '@/components/LeadCaptureForm';
 import { AboutSection } from '@/components/sections/AboutSection';
-import { ConsultingPackages } from '@/components/sections/ConsultingPackages';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { HeroSection } from '@/components/sections/HeroSection';
-import { ProjectsSection } from '@/components/sections/ProjectsSection';
-import { ResourcesSection } from '@/components/sections/ResourcesSection';
+import { CaseStudiesSection } from '@/components/sections/ProjectsSection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
 import { SectionWithParticles } from '@/components/SectionWithParticles';
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 
 export default function Home() {
   return (
@@ -15,9 +14,8 @@ export default function Home() {
       <SectionWithParticles>
         <AboutSection />
         <ServicesSection />
-        <ConsultingPackages />
-        <ProjectsSection />
-        <ResourcesSection />
+        <CaseStudiesSection />
+        <TestimonialsSection />
         <LeadCaptureForm />
         <ContactSection />
       </SectionWithParticles>

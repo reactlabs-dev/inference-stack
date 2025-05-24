@@ -49,7 +49,7 @@ export const AIAssistant = () => {
     <div>
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50 p-3 bg-[#519FF4] dark:bg-[#519FF4] border border-neutral-700 text-white rounded-full shadow-lg hover:shadow-xl transition"
+        className="fixed bottom-6 right-6 z-50 p-3 bg-[#4B41E9] dark:bg-[#4B41E9] border border-neutral-700 text-white rounded-full shadow-lg hover:shadow-xl transition"
       >
         {open ? <XMarkIcon className="w-5 h-5" /> : <ChatBubbleLeftRightIcon className="w-5 h-5 text-white" />}
       </button>

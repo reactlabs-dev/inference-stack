@@ -1,69 +1,97 @@
-type Project = {
-    title: string
-    description: string
-    tags: string[]
-    link: string
-  }
-  
-  const projects: Project[] = [
-    {
-      title: 'ProtoMedica',
-      description: 'Ambient AI infrastructure for clinical workflows. Designed and deployed end-to-end from model logic to UX interface.',
-      tags: ['Healthcare AI', 'UX Systems', 'Infra'],
-      link: '#',
-    },
-    {
-      title: 'OutcomeIQ',
-      description: 'Outcome intelligence platform that translates raw signals into orchestrated action. Built for health systems & payers.',
-      tags: ['Signal Layer', 'Predictive Models', 'FHIR'],
-      link: '#',
-    },
-    {
-      title: 'RadiologyStream (Prototype)',
-      description: 'A lightweight PACS extension that auto-surfaces abnormal findings and displays risk-aware sequencing.',
-      tags: ['Imaging UX', 'Generative AI', 'Clinical Ops'],
-      link: '#',
-    },
-  ]
-  
-  export const ProjectsSection = () => {
-    return (
-      <section
-        id="projects"
-        className="w-full px-6 py-24 sm:px-10 max-w-6xl mx-auto text-center"
+/* eslint-disable @next/next/no-img-element */
+
+type CaseStudy = {
+  title: string
+  description: string
+  tags: string[]
+  link: string
+  icon: string
+}
+
+const caseStudies: CaseStudy[] = [
+  {
+    title: 'Soluna AI',
+    description:
+      'Deployed ambient intelligence infrastructure for clinical workflows. Architected an end-to-end RAG system that integrates with HIPAA-compliant data pipelines and delivers real-time AI-driven decision support.',
+    tags: ['Healthcare AI', 'RAG Systems', 'Workflow Automation'],
+    link: 'https://www.solunaai.app',
+    icon: 'solunaflow2.png',
+  },
+  {
+    title: 'OutcomeIQ',
+    description:
+      'Built an outcome intelligence platform for payers and health systems. Translated real-time clinical and operational signals into predictive insight using custom embeddings and FHIR-aligned architecture.',
+    tags: ['Predictive Analytics', 'FHIR Integration', 'Signal Engineering'],
+    link: '#',
+    icon: 'outcomeiq2.png',
+  },
+  {
+    title: 'RadiologyStream (Prototype)',
+    description:
+      'Developed a generative AI tool for radiology prioritization. Auto-surfaced high-risk imaging patterns and sequenced cases by criticality, enhancing diagnostic throughput by 25% in initial pilots.',
+    tags: ['Generative AI', 'Medical Imaging', 'UX/Clinical Ops'],
+    link: '#',
+    icon: 'ai_data.jpg',
+  },
+]
+
+export const CaseStudiesSection = () => {
+  return (
+    <section
+      id="case-studies"
+      className="w-full px-6 py-16 sm:py-20 sm:px-10 max-w-6xl mx-auto text-center scroll-mt-16"
+      aria-labelledby="case-studies-heading"
+    >
+      <h2
+        id="case-studies-heading"
+        className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight text-gray-900 dark:text-white"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-          Projects
-        </h2>
-        <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-12 max-w-3xl mx-auto">
-          Select work from real-world deployments, prototypes, and experimental labs. These systems were built to deliver value, not just velocity.
-        </p>
-  
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-          {projects.map((project) => (
-            <a
-              key={project.title}
-              href={project.link}
-              className="p-6 rounded-md border border-neutral-800 hover:border-primary transition block"
-            >
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
-                {project.description}
+        Case Studies
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+        These aren’t demos — they’re working systems designed for real-world outcomes. Each case study reflects our ability to turn complex technical challenges into operational leverage at scale.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {caseStudies.map((study) => (
+          <a
+            key={study.title}
+            href={study.link}
+            target='_blank'
+            className="max-w-sm bg-black border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 transition block group text-left relative"
+            aria-label={`Case study: ${study.title}`}
+          >
+            <img className="rounded-t-lg" src={study.icon} alt="" />
+            <div className="p-5">
+              <h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {study.title}
+              </h3>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                {study.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
+                {study.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 bg-neutral-900 text-white dark:bg-neutral-800 rounded-full"
+                    className="text-xs px-2 py-1 bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 rounded-full"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-            </a>
-          ))}
-        </div>
-      </section>
-    )
-  }
-  
+              {study.link !== '#' && (
+                <button
+                  className="absolute bottom-5 right-5 text-white text-sm px-3 py-1 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4B41E9]"
+                  style={{ backgroundColor: '#4B41E9' }}
+                  aria-label={`Visit ${study.title} website`}
+                >
+                  Visit Site
+                </button>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
