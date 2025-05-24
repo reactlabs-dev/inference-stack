@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'Outstanding frontend developer and UX designer is what comes to mind when I think about Matt. I’ve had the pleasure of working with Matt on a project where he was responsible for the frontend development and design. I was impressed with Matt’s meticulous job of improving the product and codebase.',
+      'Outstanding engineer is what comes to mind when I think about Matt. I’ve had the pleasure of working with Matt on a project where he was responsible for the frontend development and design. I was impressed with Matt’s meticulous job of improving the product and codebase.',
     author: 'Joshua Hendricks',
     role: 'Senior Architect',
     company: 'YSG',
