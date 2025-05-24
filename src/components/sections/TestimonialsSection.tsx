@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
       'Matt always brings great positive energy to our daily stand-ups. I’m glad to have had an opportunity to work with an experienced senior developer like him on the team, whose contributions have immensely improved the team’s performance. Matt has always been very proactive in acknowledging the work of his colleagues and identifying gaps in the process.',
     author: 'Swetha Batta',
     role: 'Technical Product Manager, CSPO',
-    company: '',
+    company: 'BillGO',
   },
   {
     quote:
@@ -57,28 +57,28 @@ const testimonials: Testimonial[] = [
       'Matt produced the best product while motivating the team to learn and excel.',
     author: 'Todd Nash',
     role: 'Software Engineering Manager',
-    company: '',
+    company: 'YSG',
   },
   {
     quote:
       'Outstanding frontend developer and UX designer is what comes to mind when I think about Matt. I’ve had the pleasure of working with Matt on a project where he was responsible for the frontend development and design. I was impressed with Matt’s meticulous job of improving the product and codebase.',
     author: 'Joshua Hendricks',
     role: 'Senior Architect',
-    company: '',
+    company: 'YSG',
   },
   {
     quote:
       'As a product manager, working with Matt is a dream. He brings a wealth of knowledge in both front end web development and UX design. He is excellent at collaborating rapidly through ideas, and always brings a fresh perspective by staying up to date on the latest best practices and design trends.',
     author: 'Anthony Boyd',
     role: 'Product Manager',
-    company: 'Development Seed',
+    company: 'TalentReef',
   },
   {
     quote:
       'Matt has a unique set of skills that combine technology with thoughtful creativity. He has a profound understanding of software engineering principles that allow him to create amazing solutions. I’ve always known Matt as a React advocate, but recently he’s taken up Angular development as well.',
     author: 'Matthew Vaughn',
     role: 'UI Solutions Architect | Angular Architect',
-    company: '',
+    company: 'Dr First',
   },
   {
     quote:
@@ -92,14 +92,14 @@ const testimonials: Testimonial[] = [
       'Matt brought so much insight and a fresh UX approach to the business. He took the lead in simplifying core system functionality by focusing on the customer experience. This has played heavily in our strategic planning. I would highly recommend Matt; he is technical, approachable, and a great team player.',
     author: 'Chris Peacock',
     role: 'CPO, COO, CTO, and CIO',
-    company: '',
+    company: 'GPS Insight',
   },
   {
     quote:
       'Matt managed the solution architect, DBAs, and programmers for our SaaS software. He was key in transitioning from Waterfall to Agile, ensuring smooth twice-monthly releases with minimal defects. His high-energy and encouraging management style brought positive changes to our team.',
     author: 'Ellen Frost',
     role: 'Senior IT Manager',
-    company: '',
+    company: 'Black Knight',
   },
   {
     quote:
@@ -127,7 +127,7 @@ const testimonials: Testimonial[] = [
       'Matt Vegas is one of the rare talents to bring strong development skills, broad experience, and leadership to a team. He identifies solutions to complex business challenges, forms bonds of respect with developers, and ensures a stable product that customers love.',
     author: 'Matt Hill',
     role: 'DevOps Team Lead',
-    company: 'Yield Solutions Group',
+    company: 'YSG',
   },
   {
     quote:
@@ -195,9 +195,7 @@ export const TestimonialsSection = () => {
                     : testimonial.quote}
                 </p>
                 <footer className="text-sm text-gray-900 dark:text-white font-medium">
-                  — {testimonial.author}, {testimonial.role}
-                  <br />
-                  {testimonial.company}
+                  — {testimonial.author}, {testimonial.role} - {testimonial.company}
                 </footer>
               </div>
             </div>
