@@ -2,7 +2,7 @@ export const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="w-full px-6 py-16 sm:py-20 sm:px-10 bg-black mx-auto text-center scroll-mt-16"
+      className="w-full px-6 py-16 sm:py-20 sm:px-10 mx-auto text-center scroll-mt-16"
       aria-labelledby="services-heading"
     >
       <h2
@@ -62,7 +62,7 @@ export const ServicesSection = () => {
         ].map((service) => (
           <div
             key={service.title}
-            className="p-6 rounded-md border border-neutral-800 hover:border-neutral-500 transition group"
+            className="p-6 rounded-md border border-neutral-800 hover:border-neutral-500 bg-black transition group"
           >
             <div className="flex justify-center mb-4">{service.icon}</div>
             <h3 className="text-xl font-semibold mb-2 text-neutral-100">{service.title}</h3>

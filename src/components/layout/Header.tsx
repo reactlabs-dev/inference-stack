@@ -28,8 +28,8 @@ export const Header = () => {
         <header className="sticky top-0 z-50 w-full border-b border-neutral-800 bg-white/90 dark:bg-black/90 backdrop-blur">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-neutral-700 text-neutral-400 group-hover:text-white transition text-2xl">
-                        <img className="rounded-full p-1" src="/inferencestack.png" alt="official inference stack logo" />
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full text-neutral-400 group-hover:text-white transition text-2xl">
+                        <img className="rounded-full" src="/inferencestack.png" alt="official inference stack logo" />
                     </div>
                     <div className="flex flex-col">
                         <span className="text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">

@@ -164,7 +164,7 @@ export const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="max-w-full px-6 py-16 sm:py-20 sm:px-10 mx-auto text-center scroll-mt-16 bg-black"
+      className="max-w-6xl px-6 py-16 sm:py-20 sm:px-10 mx-auto text-center scroll-mt-16"
       aria-labelledby="testimonials-heading"
     >
       <h2
