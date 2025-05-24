@@ -69,7 +69,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`min-h-screen bg-black text-white dark:bg-black dark:text-white transition-colors duration-300 ${inter.className}`}
+        className={`min-h-screen bg-black text-white dark:bg-black dark:text-white ${inter.className}`}
       > <RouteTracker />
         <Header />
         <main className="relative z-10">{children}</main>
